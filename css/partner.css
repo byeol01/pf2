@@ -1,0 +1,38 @@
+#partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*! background-color: beige; */
+  /*! background-image: url(https://images.unsplash.com/photo-1622228862437-aa0316bb3b93?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(-35deg, rgba(255,255,255,0) 69.9%,#f88 70%, #f88 90%),url(../img/photo.avif)aliceblue;
+  animation-name: colorslide;
+  animation-duration: 1s;
+}
+@keyframes colorslide{
+  from{
+    background-position-left:0%
+  }
+  to{
+    background-position-left:100%
+  }
+}
+
+#partner .wrap {
+ 
+}
+#partner .wrap h2 {
+ 
+}
+#partner .wrap h3 {
+ 
+}
+#partner .wrap p {
+ 
+  order: 3;
+}
+#partner .wrap a {
+ 
+  order: 2;
+}

@@ -1,0 +1,167 @@
+/* 타이틀 영역 */
+#title{
+  background-color: #addfe4;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+#title::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 271px;
+  background-image: url(../img/svg/wave.svg);
+  background-size: cover;
+  background-position-y: -57px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+}
+
+#title .wrap{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  z-index: 1;
+}
+
+#title h2.h1{
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: last baseline;
+}
+
+#title .titlep{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#title nav{
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+
+/* 네비게이션 스타일 */
+#title nav {
+
+}
+#title nav ul {
+
+}
+
+#title nav ul li { 
+
+  width: 200px;
+  height: 150px;
+  /*! border: 1px solid #000; */
+  margin: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+#title nav ul li a .menu {
+}
+#title nav ul li a .menu:hover{ 
+
+}
+
+#title nav ul li a::before{
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: translateY(-4px);
+  
+  filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(180deg);
+}
+
+#title nav ul li:nth-child(1) a::before{
+  content: "";
+  /*! display: block; */
+  background-image: url(../img/png/city.png);
+}
+#title nav ul li:nth-child(1):hover a::before{ 
+  display: none;
+}
+
+#title nav ul li:nth-child(2) a::before{
+  content: "";
+  background-image: url(../img/png/graph.png);
+}
+#title nav ul li:nth-child(2) a:hover::before{
+  display: none;
+}
+
+#title nav ul li:nth-child(3) a::before{
+  content: "";
+  background-image: url(../img/png/scale.png);
+}
+#title nav ul li:nth-child(3) a:hover::before{
+  display: none;
+}
+#title nav ul li:nth-child(4) a::before{
+  content: "";
+  background-image: url(../img/png/id.png);
+}
+#title nav ul li:nth-child(4) a:hover::before{
+  display: none;
+}
+
+#title nav ul li a { 
+  display: block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: white;
+}
+
+#title nav ul li a:hover{
+  background-color: #55a2da;
+}
+#title nav ul li a::after{
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-image: url(../img/svg/top1.svg);
+  transform: rotate(90deg);
+  border: 1px solid #fff;
+  padding: 4px;
+  border-radius: 20px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#title nav ul li a:hover::after{
+  
+  display: flex;
+  position: absolute;
+  bottom: -16px;
+}
+
+#title nav ul li a .sm {
+
+ }
+#title nav ul li p{
+  display: none;
+}
+#title video{
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+}

@@ -1,0 +1,15 @@
+/* 모바일버전 768이하 */
+@media screen and (max-width:768px){
+  header .wrap nav{
+    
+  padding: 0 15px;
+  }
+  header .wrap nav .gnb.menu{
+    
+  display: none;
+  }
+  header .wrap nav .etc.xs li a{
+    display: none;
+  }
+  /* end */
+}
